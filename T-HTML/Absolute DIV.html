@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Absolute DIV</title>
+    <link rel="icon" type="image/gif/png/jpg/jfif" href="IMG/Shadow.jpeg">
+    <style>
+        div.relativo {
+            position: relative;
+            width: 400px;
+            height: 200px;
+            left: 25px;
+            border: 3px solid green;
+        }
+
+        div.absoluto {
+            position: absolute;
+            top: 50px;
+            right: 0;
+            width: 200px;
+            height: 100;
+            border: 3px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h2>Posición del DIV: absolute;</h2>
+
+    <p>Un elemento con posición Absoluta se ubca en relación al elemento previo
+        más cercano (en vez de ubicarse relativo a la pantalla, similar al fijo):
+    </p>
+
+    <div class="relativo">
+        Este elemento DIV tiene una posición relativa
+        <div class="absoluto">
+            Este elemento DIV tiene una posición absoluta
+            (en relación al DIV donde está contenido)
+        </div>
+    </div>
+</body>
+</html>
